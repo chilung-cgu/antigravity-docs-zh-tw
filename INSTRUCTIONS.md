@@ -113,10 +113,13 @@ antigravity-docs-zh-tw/
 ## 🔧 Git Automation Protocol
 
 ### 1. Repository Setup
-由於 Agent 環境可能未安裝 `gh` CLI，請使用者手動執行一次：
+Remote Repository 已建立：`https://github.com/chilung-cgu/antigravity-docs-zh-tw`
+
+首次推送（已完成）：
 ```bash
-# 在本機環境執行
-gh repo create chilung-cgu/antigravity-docs-zh-tw --public --source=. --remote=origin --push
+git remote add origin https://github.com/chilung-cgu/antigravity-docs-zh-tw.git
+git branch -M main
+git push -u origin main
 ```
 
 ### 2. Commit 頻率
