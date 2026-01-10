@@ -90,59 +90,57 @@ antigravity-docs-zh-tw/
 
 ## 🤖 Agent 行為準則
 
-1. **開始前**：讀取 `INSTRUCTIONS.md` 和 `task.md`。
-2. **獲取內容**：使用瀏覽器工具或請使用者提供原文內容。
-3. **批次執行**：完成整個章節後才停止，除非被使用者中斷。
-4. **自動更新**：完成一篇後，更新 `task.md` 標記為 `[x]`。
-5. **術語一致**：翻譯前檢查 `GLOSSARY.md` 確保術語一致。
-6. **錯誤處理**：若無法獲取原文，加入 `[BLOCKED: 需要原文]` 標記。
+1.  **開始前**：讀取 `INSTRUCTIONS.md` 和 `task.md`。
+2.  **全量執行 (Batch Mode)**：
+    -   **預設模式**：除非使用者明確指定單一任務，否則 Agent 應**連續執行** `task.md` 中的所有未完成項目。
+    -   **不中斷**：完成一個檔案後，自動進入下一個，**不需要**每次都詢問使用者，直到遇到 [BLOCKED] 或所有任務完成。
+3.  **獲取內容**：
+    -   使用 Antigravity 內建瀏覽器工具訪問頁面。
+    -   若遇到 SPA 載入問題，嘗試多種 selector 或等待載入。
+    -   若完全無法獲取，標記 [BLOCKED] 並繼續下一頁。
+4.  **自動更新**：每完成一篇，更新 `task.md` 標記為 `[x]`。
+5.  **術語一致**：翻譯前檢查 `GLOSSARY.md` 確保術語一致。
 
 ---
 
 ## 📌 版本控制
 
+- **v1.1** (2026-01-10)：新增全量翻譯模式，優化 Repository 設置流程。
 - **v1.0** (2026-01-10)：初始版本
 
 ---
 
 ## 🔧 Git Automation Protocol
 
-### 1. Commit 頻率
-- **原則**：每完成一個文檔頁面，進行一次 Commit。
+### 1. Repository Setup
+由於 Agent 環境可能未安裝 `gh` CLI，請使用者手動執行一次：
+```bash
+# 在本機環境執行
+gh repo create chilung-cgu/antigravity-docs-zh-tw --public --source=. --remote=origin --push
+```
 
-### 2. Commit Message 規範
-格式：`[Category] Page Name: Action`
-範例：
-- `[Agent] Models: Add Traditional Chinese translation`
-- `[Task] Update progress for Agent section`
+### 2. Commit 頻率
+- **原則**：每完成一個文檔頁面，進行一次 Commit。
+- **指令**：
+    ```bash
+    git add .
+    git commit -m "[Category] Page Name: Add translation"
+    ```
 
 ### 3. Push 頻率
-- **原則**：每完成一個章節 Push 一次。
+- **原則**：每完成 **3-5 個檔案** 或 **一個完整章節** 後 Push 一次，確保雲端同步但不過於頻繁。
+- **指令**：
+    ```bash
+    git push origin main
+    ```
 
-### 4. Agent 行為
-```bash
-# 完成一篇翻譯後
-git add .
-git commit -m "[Category] Page Name: Add translation"
-
-# 完成一個章節後
-git push origin main
-```
+### 4. 錯誤處理
+- 若 Push 失敗（如遇到 conflicts 或驗證問題），Agent 應暫停並通知使用者。
 
 ---
 
-## 🌐 原文獲取方式
+## 🌐 原文獲取詳情
+由於官方文檔為 SPA 架構，需透過以下優先順序獲取內容：
+1. **瀏覽器工具**：使用 `open_browser_url` 和 `read_browser_page` 讀取渲染後的 DOM。
+2. **手動提供**：若自動化失敗，標記任務為 [BLOCKED] 並請使用者提供。
 
-由於官方文檔為 SPA 架構，需透過以下方式獲取原文：
-
-1. **瀏覽器工具**（優先）
-   - 使用 Antigravity 內建瀏覽器工具訪問頁面
-   - 擷取渲染後的內容
-
-2. **使用者提供**
-   - 使用者將文檔內容複製貼上
-   - Agent 進行翻譯
-
-3. **Web 搜尋輔助**
-   - 搜尋相關內容作為補充資料
-   - 確保資訊準確性
