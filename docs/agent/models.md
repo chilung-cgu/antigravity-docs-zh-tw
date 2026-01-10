@@ -28,3 +28,10 @@ Antigravity 在技術棧的各個部分使用了一些不可自定義的其他�
 - **Gemini 2.5 Pro UI Checkpoint**: 由 Browser Subagent (瀏覽器子代理) 使用，用於操作瀏覽器，例如點擊、滾動或填寫輸入。
 - **Gemini 2.5 Flash**: 在背景中使用，用於 Checkpointing (檢查點製作) 和 Context Summarization (上下文摘要)。
 - **Gemini 2.5 Flash Lite**: 由 Codebase Semantic Search Tool (程式碼庫語義搜尋工具) 使用。
+
+---
+導覽：[<- Agent](index.md) | [Modes ->](modes.md)
+
+---
+
+> **原文參考**：[antigravity.google/docs/models](https://antigravity.google/docs/models)

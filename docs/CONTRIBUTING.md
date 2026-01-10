@@ -63,5 +63,8 @@ const greeting = "Hello, World!";
 - [ ] 內部連結有效
 
 ---
+導覽：[<- Home](index.md) | [Glossary ->](GLOSSARY.md)
+
+---
 
 如有問題，歡迎開 Issue 討論！

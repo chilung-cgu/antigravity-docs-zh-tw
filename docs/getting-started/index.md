@@ -15,5 +15,8 @@
 同樣地，在代理管理器中，您可以透過工作空間下拉選單中的「聚焦編輯器」(Focus Editor) 選項開啟編輯器。當專注於某個工作空間時，您可以點擊任何「開啟編輯器」按鈕，或使用鍵盤快捷鍵 `Cmd + E` 開啟編輯器。
 
 ---
+導覽：[<- Home](../index.md) | [Agent ->](../agent/index.md)
+
+---
 
 > **原文參考**：[antigravity.google/docs/get-started](https://antigravity.google/docs/get-started)

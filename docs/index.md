@@ -51,5 +51,8 @@ Antigravity 將 AI 代理提升為核心角色，代理可以：
 - [常見問題](faq/index.md) - FAQ
 
 ---
+導覽：[Getting Started ->](getting-started/index.md)
+
+---
 
 > **原文參考**：[antigravity.google/docs](https://antigravity.google/docs/)

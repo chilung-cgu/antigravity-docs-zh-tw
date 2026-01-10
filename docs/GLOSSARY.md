@@ -52,3 +52,10 @@
 | **Allowlist** | 允許清單。 |
 | **Denylist** | 拒絕清單。 |
 | **Profile** | 設定檔 (瀏覽器)。 |
+
+---
+導覽：[<- Contributing](CONTRIBUTING.md) | [Home ->](index.md)
+
+---
+
+> **原文參考**：[antigravity.google/docs](https://antigravity.google/docs)

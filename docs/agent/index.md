@@ -18,3 +18,10 @@ Agent 是 Google Antigravity 內的主要 AI 功能。它是一個多步驟推�
 - **Workflows** (工作流程)
 
 您可以同時開啟多個 Agent 對話，包括並存執行。您可以透過 Agent Manager (代理管理器) 中的「右鍵點擊 > 刪除對話」，或點擊 Editor 中 Agent Side Panel (代理面板) 的垃圾桶圖示來刪除 Agent 對話。
+
+---
+導覽：[<- Getting Started](../getting-started/index.md) | [Models ->](models.md)
+
+---
+
+> **原文參考**：[antigravity.google/docs/agent](https://antigravity.google/docs/agent)
