@@ -22,7 +22,7 @@
 ## 01. Getting Started (快速入門)
 > 安裝指南與基礎介紹
 
-- [ ] [快速入門首頁](docs/getting-started/index.md) <!-- 需要原文 -->
+- [x] [快速入門首頁](docs/getting-started/index.md)
 
 ---
 
