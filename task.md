@@ -2,8 +2,8 @@
 
 ## 📊 總覽
 - **總文檔數**：約 25 頁
-- **已完成**：10 頁
-- **進度**：40%
+- **已完成**：16 頁
+- **進度**：64%
 
 ---
 
@@ -51,12 +51,12 @@
 ## 04. Editor (編輯器)
 > 編輯器功能介紹
 
-- [ ] [編輯器概述](docs/editor/index.md) <!-- 需要原文 -->
-- [ ] [分頁 Tabs](docs/editor/tabs.md) <!-- 需要原文 -->
-- [ ] [命令 Commands](docs/editor/commands.md) <!-- 需要原文 -->
-- [ ] [代理側邊欄 Agent Side Panel](docs/editor/agent-side-panel.md) <!-- 需要原文 -->
-- [ ] [審查變更 Review Changes](docs/editor/review-changes.md) <!-- 需要原文 -->
-- [ ] [原始碼控制 Source Control](docs/editor/source-control.md) <!-- 需要原文 -->
+- [x] [編輯器概述](docs/editor/index.md)
+- [x] [分頁 Tabs](docs/editor/tabs.md)
+- [x] [命令 Commands](docs/editor/commands.md)
+- [x] [代理側邊欄 Agent Side Panel](docs/editor/agent-side-panel.md)
+- [x] [審查變更 Review Changes](docs/editor/review-changes.md)
+- [x] [原始碼控制 Source Control](docs/editor/source-control.md)
 
 ---
 
