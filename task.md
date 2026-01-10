@@ -30,7 +30,7 @@
 > AI 代理核心概念
 
 - [x] [智能代理概述](docs/agent/index.md)
-- [ ] [模型 Models](docs/agent/models.md) <!-- 需要原文 -->
+- [x] [模型 Models](docs/agent/models.md)
 - [ ] [模式 Modes](docs/agent/modes.md) <!-- 需要原文 -->
 - [ ] [設定 Settings](docs/agent/settings.md) <!-- 需要原文 -->
 - [ ] [規則 Rules](docs/agent/rules.md) <!-- 需要原文 -->
