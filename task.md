@@ -2,8 +2,8 @@
 
 ## 📊 總覽
 - **總文檔數**：約 25 頁
-- **已完成**：16 頁
-- **進度**：64%
+- **已完成**：22 頁
+- **進度**：88%
 
 ---
 
@@ -63,12 +63,12 @@
 ## 05. Agent Manager (代理管理器)
 > 任務管理與監控
 
-- [ ] [代理管理器概述](docs/agent-manager/index.md) <!-- 需要原文 -->
-- [ ] [工作空間 Workspaces](docs/agent-manager/workspaces.md) <!-- 需要原文 -->
-- [ ] [遊樂場 Playground](docs/agent-manager/playground.md) <!-- 需要原文 -->
-- [ ] [收件匣 Inbox](docs/agent-manager/inbox.md) <!-- 需要原文 -->
-- [ ] [對話視圖 Conversation View](docs/agent-manager/conversation-view.md) <!-- 需要原文 -->
-- [ ] [瀏覽器子代理 Browser Subagent](docs/agent-manager/browser-subagent.md) <!-- 需要原文 -->
+- [x] [代理管理器概述](docs/agent-manager/index.md)
+- [x] [工作空間 Workspaces](docs/agent-manager/workspaces.md)
+- [x] [遊樂場 Playground](docs/agent-manager/playground.md)
+- [x] [收件匣 Inbox](docs/agent-manager/inbox.md)
+- [x] [對話視圖 Conversation View](docs/agent-manager/conversation-view.md)
+- [x] [瀏覽器子代理 Browser Subagent](docs/agent-manager/browser-subagent.md)
 
 ---
 
