@@ -16,7 +16,6 @@ Antigravity 透過強調以下階段，使 Agent 能夠跨多個介面自主運�
 
 *   **Planning (規劃)**：建立結構化計畫與 Task groups。
 *   **Execution (執行)**：同步控制 Editor、Terminal 與 Browser 介面。
-*   **Verification (驗證)**：檢查 Agent 工作的結果，以確保更高層級的溝通與品質（通常使用 Browser Subagent 或審閱 Artifacts）。
 
 ---
 導覽：[<- Models](models.md) | [Settings ->](settings.md)

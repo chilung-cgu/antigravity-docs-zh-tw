@@ -1,25 +1,25 @@
-# 瀏覽器子代理 (Browser Subagent)
+# Browser Subagent (瀏覽器子代理)
 
-當代理需要與網頁互動時，它會調用**瀏覽器子代理 (Browser Subagent)**。
+當 Agent 需要與網頁互動時，它會調用 **Browser Subagent**。
 
-## 技術背景
+## Technical Context (技術背景)
 
-*   **專用模型**：子代理運行一個專門為操作網頁優化的模型，獨立於主代理模型。
-*   **工具權限**：具備點擊、捲動、輸入以及讀取控制台日誌 (Console Logs) 等能力。
+*   **Dedicated Model**: Subagent 運行一個專門為操作網頁優化的模型，獨立於主 Agent 模型。
+*   **Tool Capabilities**: 具備點擊、捲動、輸入以及讀取 Console Logs 等能力。
 
-## 視覺與互動
+## Visuals & Interaction (視覺與互動)
 
-*   **視覺回饋**：啟動時，瀏覽器會顯示藍色邊框與顯示目前動作的小面板。為了避免衝突，此時使用者的互動會被暫時停用。
-*   **後台操作**：子代理可以在非聚焦的分頁中運行，不影響您在其他分頁的工作。
+*   **Visual Feedback**: 啟動時，Browser 會顯示藍色邊框與顯示目前動作的小面板。為了避免衝突，此時使用者的互動會被暫時停用。
+*   **Background Operation**: Subagent 可以在非聚焦的 Tab 中運行，不影響您在其他 Tabs 的工作。
 
-## 在代理管理器中的展現
+## In Agent Manager (在代理管理器中的展現)
 
-*   **實況動態**：提供子代理進度的即時更新。
-*   **側邊欄**：顯示當前頁面的詳細資訊與子代理動作。
-*   **視覺巡檢 (Visual Inspection)**：讓您精確看到代理正在互動的網頁元素。
+*   **Live Feed**: 提供 Subagent 進度的即時更新。
+*   **Sidebar**: 顯示當前頁面的詳細資訊與 Subagent 動作。
+*   **Visual Inspection**: 讓您精確看到 Agent 正在互動的網頁元素。
 
 ---
-導覽：[<- 對話視圖](conversation-view.md) | [常見問題 ->](../faq/index.md)
+導覽：[<- Conversation View](conversation-view.md) | [FAQ ->](../faq/index.md)
 
 ---
 

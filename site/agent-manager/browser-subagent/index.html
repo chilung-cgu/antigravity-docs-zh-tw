@@ -1463,10 +1463,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#technical-context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        技術背景
+        Technical Context (技術背景)
       
     </span>
   </a>
@@ -1474,10 +1474,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#visuals-interaction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        視覺與互動
+        Visuals &amp; Interaction (視覺與互動)
       
     </span>
   </a>
@@ -1485,10 +1485,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#in-agent-manager" class="md-nav__link">
     <span class="md-ellipsis">
       
-        在代理管理器中的展現
+        In Agent Manager (在代理管理器中的展現)
       
     </span>
   </a>
@@ -1790,10 +1790,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#technical-context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        技術背景
+        Technical Context (技術背景)
       
     </span>
   </a>
@@ -1801,10 +1801,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#visuals-interaction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        視覺與互動
+        Visuals &amp; Interaction (視覺與互動)
       
     </span>
   </a>
@@ -1812,10 +1812,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#in-agent-manager" class="md-nav__link">
     <span class="md-ellipsis">
       
-        在代理管理器中的展現
+        In Agent Manager (在代理管理器中的展現)
       
     </span>
   </a>
@@ -1842,26 +1842,26 @@
   
 
 
-<h1 id="browser-subagent">瀏覽器子代理 (Browser Subagent)</h1>
-<p>當代理需要與網頁互動時，它會調用<strong>瀏覽器子代理 (Browser Subagent)</strong>。</p>
-<h2 id="_1">技術背景</h2>
+<h1 id="browser-subagent">Browser Subagent (瀏覽器子代理)</h1>
+<p>當 Agent 需要與網頁互動時，它會調用 <strong>Browser Subagent</strong>。</p>
+<h2 id="technical-context">Technical Context (技術背景)</h2>
 <ul>
-<li><strong>專用模型</strong>：子代理運行一個專門為操作網頁優化的模型，獨立於主代理模型。</li>
-<li><strong>工具權限</strong>：具備點擊、捲動、輸入以及讀取控制台日誌 (Console Logs) 等能力。</li>
+<li><strong>Dedicated Model</strong>: Subagent 運行一個專門為操作網頁優化的模型，獨立於主 Agent 模型。</li>
+<li><strong>Tool Capabilities</strong>: 具備點擊、捲動、輸入以及讀取 Console Logs 等能力。</li>
 </ul>
-<h2 id="_2">視覺與互動</h2>
+<h2 id="visuals-interaction">Visuals &amp; Interaction (視覺與互動)</h2>
 <ul>
-<li><strong>視覺回饋</strong>：啟動時，瀏覽器會顯示藍色邊框與顯示目前動作的小面板。為了避免衝突，此時使用者的互動會被暫時停用。</li>
-<li><strong>後台操作</strong>：子代理可以在非聚焦的分頁中運行，不影響您在其他分頁的工作。</li>
+<li><strong>Visual Feedback</strong>: 啟動時，Browser 會顯示藍色邊框與顯示目前動作的小面板。為了避免衝突，此時使用者的互動會被暫時停用。</li>
+<li><strong>Background Operation</strong>: Subagent 可以在非聚焦的 Tab 中運行，不影響您在其他 Tabs 的工作。</li>
 </ul>
-<h2 id="_3">在代理管理器中的展現</h2>
+<h2 id="in-agent-manager">In Agent Manager (在代理管理器中的展現)</h2>
 <ul>
-<li><strong>實況動態</strong>：提供子代理進度的即時更新。</li>
-<li><strong>側邊欄</strong>：顯示當前頁面的詳細資訊與子代理動作。</li>
-<li><strong>視覺巡檢 (Visual Inspection)</strong>：讓您精確看到代理正在互動的網頁元素。</li>
+<li><strong>Live Feed</strong>: 提供 Subagent 進度的即時更新。</li>
+<li><strong>Sidebar</strong>: 顯示當前頁面的詳細資訊與 Subagent 動作。</li>
+<li><strong>Visual Inspection</strong>: 讓您精確看到 Agent 正在互動的網頁元素。</li>
 </ul>
 <hr />
-<p>導覽：<a href="../conversation-view/">&lt;- 對話視圖</a> | <a href="../../faq/">常見問題 -&gt;</a></p>
+<p>導覽：<a href="../conversation-view/">&lt;- Conversation View</a> | <a href="../../faq/">FAQ -&gt;</a></p>
 <hr />
 <blockquote>
 <p><strong>原文參考</strong>：<a href="https://antigravity.google/docs/browser-subagent">antigravity.google/docs/browser-subagent</a></p>
