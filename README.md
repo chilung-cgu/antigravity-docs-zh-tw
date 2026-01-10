@@ -1,6 +1,7 @@
 # Google Antigravity 繁體中文文檔
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Docs](https://img.shields.io/badge/docs-gh--pages-blue)](https://chilung-cgu.github.io/antigravity-docs-zh-tw/)
 
 本專案為 [Google Antigravity](https://antigravity.google/) 官方文檔的繁體中文翻譯版本。
 

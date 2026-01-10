@@ -1,0 +1,78 @@
+site_name: Antigravity 繁體中文文檔
+site_url: https://chilung-cgu.github.io/antigravity-docs-zh-tw/
+repo_url: https://github.com/chilung-cgu/antigravity-docs-zh-tw
+repo_name: chilung-cgu/antigravity-docs-zh-tw
+
+theme:
+  name: material
+  language: zh-TW
+  palette: 
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list
+
+nav:
+  - 首頁: index.md
+  - 快速入門:
+    - getting-started/index.md
+  - 智能代理:
+    - 概述: agent/index.md
+    - 模型: agent/models.md
+    - 模式: agent/modes.md
+    - 設定: agent/settings.md
+    - 規則: agent/rules.md
+    - 工作流程: agent/workflows.md
+  - 工具:
+    - 概述: tools/index.md
+    - MCP: tools/mcp.md
+    - 產出物: tools/artifacts.md
+    - 知識庫: tools/knowledge.md
+  - 編輯器:
+    - 概述: editor/index.md
+    - 分頁: editor/tabs.md
+    - 指令: editor/commands.md
+    - 代理面板: editor/agent-side-panel.md
+    - 審查變更: editor/review-changes.md
+    - 原始碼控制: editor/source-control.md
+  - 代理管理器:
+    - 概述: agent-manager/index.md
+    - 工作空間: agent-manager/workspaces.md
+    - 遊樂場: agent-manager/playground.md
+    - 收件匣: agent-manager/inbox.md
+    - 對話視圖: agent-manager/conversation-view.md
+    - 瀏覽器子代理: agent-manager/browser-subagent.md
+  - 瀏覽器:
+    - 概述: browser/index.md
+    - Chrome 擴充功能: browser/chrome-extension.md
+    - 允許/拒絕清單: browser/allowlist-denylist.md
+    - Chrome 設定檔: browser/chrome-profiles.md
+  - 常見問題: faq/index.md
+  - 貢獻指南: CONTRIBUTING.md
+  - 術語表: GLOSSARY.md

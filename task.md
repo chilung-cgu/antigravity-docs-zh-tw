@@ -7,7 +7,16 @@
 
 ---
 
-## 00. 專案設置
+## 08. Deployment (部署)
+- [x] [MkDocs 配置](mkdocs.yml)
+- [x] [GitHub Actions Workflow](.github/workflows/deploy.yml)
+- [x] [文檔結構調整](docs/index.md)
+
+---
+- [ ] [GitHub Actions Workflow](.github/workflows/deploy.yml)
+- [ ] [文檔結構調整](docs/index.md)
+
+---
 > 專案初始化與基礎設定
 
 - [x] 創建專案結構
@@ -98,6 +107,7 @@
 | `[x]` | 已完成 |
 | `<!-- 需要原文 -->` | 需要獲取原文內容 |
 | `[BLOCKED]` | 遇到問題無法繼續 |
+- [2026-01-10] 完成 GitHub Pages 部署設定 (MkDocs Material)。
 
 ---
 
