@@ -2,8 +2,8 @@
 
 ## 📊 總覽
 - **總文檔數**：約 25 頁
-- **已完成**：6 頁
-- **進度**：24%
+- **已完成**：10 頁
+- **進度**：40%
 
 ---
 
@@ -41,10 +41,10 @@
 ## 03. Tools (工具)
 > MCP、產出物、知識庫
 
-- [ ] [工具概述](docs/tools/index.md) <!-- 需要原文 -->
-- [ ] [MCP](docs/tools/mcp.md) <!-- 需要原文 -->
-- [ ] [產出物 Artifacts](docs/tools/artifacts.md) <!-- 需要原文 -->
-- [ ] [知識庫 Knowledge](docs/tools/knowledge.md) <!-- 需要原文 -->
+- [x] [工具概述](docs/tools/index.md)
+- [x] [MCP](docs/tools/mcp.md)
+- [x] [產出物 Artifacts](docs/tools/artifacts.md)
+- [x] [知識庫 Knowledge](docs/tools/knowledge.md)
 
 ---
 
