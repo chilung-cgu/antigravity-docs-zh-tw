@@ -75,17 +75,17 @@
 ## 06. Browser (瀏覽器)
 > Chrome 擴充功能設定
 
-- [ ] [瀏覽器概述](docs/browser/index.md) <!-- 需要原文 -->
-- [ ] [Chrome 擴充功能](docs/browser/chrome-extension.md) <!-- 需要原文 -->
-- [ ] [允許/拒絕清單](docs/browser/allowlist-denylist.md) <!-- 需要原文 -->
-- [ ] [Chrome 設定檔](docs/browser/chrome-profiles.md) <!-- 需要原文 -->
+- [x] [瀏覽器概述](docs/browser/index.md)
+- [x] [Chrome 擴充功能](docs/browser/chrome-extension.md)
+- [x] [允許/拒絕清單](docs/browser/allowlist-denylist.md)
+- [x] [Chrome 設定檔](docs/browser/chrome-profiles.md)
 
 ---
 
 ## 07. FAQ (常見問題)
 > 常見問題解答
 
-- [ ] [常見問題](docs/faq/index.md) <!-- 需要原文 -->
+- [x] [常見問題](docs/faq/index.md)
 
 ---
 

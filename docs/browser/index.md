@@ -1,38 +1,21 @@
-# 瀏覽器
+# 瀏覽器概述 (Browser Overview)
 
-Antigravity 透過 **Chrome 擴充功能** 讓代理能夠直接與網頁應用互動，實現自動化測試與驗證。
+Antigravity 具備開啟、讀取與控制 Chrome 瀏覽器的能力，讓您能夠測試開發中的網站、讀取網路數據源，並自動化各種瀏覽器任務。
 
-## 功能概覽
+## 運作機制
 
-| 功能 | 說明 |
-|------|------|
-| **網頁導覽** | 自動導覽至指定網址 |
-| **表單操作** | 填寫表單、點擊按鈕 |
-| **截圖** | 擷取網頁畫面 |
-| **錄影** | 錄製操作過程 |
-| **內容讀取** | 讀取網頁文字與結構 |
+*   **子代理控制**：Antigravity 透過「子代理 (Subagent)」在瀏覽器中執行動作。
+*   **視覺化紀錄**：子代理會紀錄其操作，並產生截圖與影片作為產出物 (Artifacts)。
+*   **環境隔離**：為了確保安全，Antigravity 會在獨立的「瀏覽器設定檔 (Browser Profile)」中執行，不會與您的日常瀏覽歷史、Cookie 或登入資訊連結。
 
-## 安裝擴充功能
+## 相關設定
 
-1. 當代理需要使用瀏覽器時，會自動提示安裝
-2. 點擊提示連結前往 Chrome 線上應用程式商店
-3. 安裝「Antigravity Browser Extension」
-4. 授予必要權限
+*   **Chrome 二進位路徑 (Chrome Binary Path)**：Chrome 可執行檔的路徑。留空則自動偵測。
+*   **Chrome 設定檔路徑 (Chrome Profile Path)**：特定資料夾路徑。留空則使用預設隔離路徑。
 
-## 安全控制
-
-為保護隱私，您可以設定：
-
-- **允許清單** - 只允許特定網站
-- **拒絕清單** - 封鎖特定網站
-- **獨立設定檔** - 使用獨立的 Chrome 設定檔
-
-## 本章內容
-
-- [Chrome 擴充功能](chrome-extension.md) - 安裝與設定
-- [允許/拒絕清單](allowlist-denylist.md) - 存取控制
-- [Chrome 設定檔](chrome-profiles.md) - 獨立設定檔
+---
+導覽：[<- 常見問題](../faq/index.md) | [Chrome 擴充功能 ->](chrome-extension.md)
 
 ---
 
-> **注意**：瀏覽器功能目前為預覽版本。
+> **原文參考**：[antigravity.google/docs/browser](https://antigravity.google/docs/browser)
