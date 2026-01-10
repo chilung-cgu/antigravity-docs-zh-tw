@@ -151,9 +151,9 @@ git push -u origin main
 為了提供更好的閱讀體驗，本專案將使用 **MkDocs** 搭配 **Material for MkDocs** 主題，並透過 **GitHub Actions** 自動部署至 GitHub Pages。
 
 - **配置檔案**：`mkdocs.yml`
-- **自動化流程**：`.github/workflows/deploy.yml`
-- **觸發條件**：推送到 `main` 分支時自動觸發。
-- **目標分支**：`gh-pages`
+- **自動化流程**：`.github/workflows/deploy.yml` (Modern Mode)
+- **部署方式**：`actions/deploy-pages` (無 `gh-pages` 分支)
+- **GitHub 設定**：Pages Source 必須設定為 **GitHub Actions**。
 
 當進行文檔結構變更時，請務必確認 `mkdocs.yml` 中的 `nav` 設定是否同步更新。
 

@@ -9,7 +9,7 @@
 
 ## 08. Deployment (部署)
 - [x] [MkDocs 配置](mkdocs.yml)
-- [x] [GitHub Actions Workflow](.github/workflows/deploy.yml)
+- [x] [升級為 Modern GitHub Actions](.github/workflows/deploy.yml)
 - [x] [文檔結構調整](docs/index.md)
 
 ---
@@ -108,6 +108,7 @@
 | `<!-- 需要原文 -->` | 需要獲取原文內容 |
 | `[BLOCKED]` | 遇到問題無法繼續 |
 - [2026-01-10] 完成 GitHub Pages 部署設定 (MkDocs Material)。
+- [2026-01-10] 升級部署流程為 Modern GitHub Actions。
 
 ---
 
