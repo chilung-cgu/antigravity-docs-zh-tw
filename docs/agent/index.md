@@ -1,25 +1,20 @@
-# 智能代理 (Agent)
+# Agent
 
-代理是 Google Antigravity 內最主要的 AI 功能。它是一個由尖端大語言模型 (LLM) 驅動的多步驟推理系統，能夠對您現有的程式碼進行推理、使用各種工具（包括瀏覽器），並透過任務 (Tasks)、產出物 (Artifacts) 等方式與使用者溝通。
+Agent 是 Google Antigravity 內的主要 AI 功能。它是一個多步驟推理系統，由前沿 LLM 驅動，可以對您現有的程式碼進行推理、使用廣泛的 Tools (工具，包括 Browser)，並透過 Tasks (任務)、Artifacts (產出物) 等與使用者溝通。
 
-## 核心組件
+## Core Components (核心組件)
 
-*   **推理模型 (Reasoning model)**：提供智能基礎的底層大語言模型。
-*   **工具 (Tools)**：代理可用於與環境互動的能力。
-*   **產出物 (Artifacts)**：程式碼與文件的專業輸出格式。
-*   **知識庫 (Knowledge)**：代理可存取的上下文與資訊。
+- **Reasoning Model** (推理模型)
+- **Tools** (工具)
+- **Artifacts** (產出物)
+- **Knowledge** (知識)
 
-## 自定義
+## Customizations (自定義)
 
-*   **代理模式 / 設定 (Agent Modes / Settings)**：代理行為的組態選項。
-*   **MCP**：Model Context Protocol 整合。
-*   **規則 / 工作流程 (Rules / Workflows)**：針對日常任務的預定義指令集。
+- **Modes** (模式)
+- **Settings** (設定)
+- **MCP**
+- **Rules** (規則)
+- **Workflows** (工作流程)
 
-您可以啟動多個代理對話，包括併行執行。您可以透過代理管理器中的「右鍵點擊 > 刪除對話」或點擊編輯器代理面板中的垃圾桶圖示來刪除代理對話。
-
----
-導覽：[<- 快速入門](../getting-started/index.md) | [模型 ->](models.md)
-
----
-
-> **原文參考**：[antigravity.google/docs/agent](https://antigravity.google/docs/agent)
+您可以同時開啟多個 Agent 對話，包括並存執行。您可以透過 Agent Manager (代理管理器) 中的「右鍵點擊 > 刪除對話」，或點擊 Editor 中 Agent Side Panel (代理面板) 的垃圾桶圖示來刪除 Agent 對話。

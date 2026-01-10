@@ -785,19 +785,19 @@
   <a href="#overall-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        通用設定 (Overall Settings)
+        Overall Settings (通用設定)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="通用設定 (Overall Settings)">
+    <nav class="md-nav" aria-label="Overall Settings (通用設定)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#artifact-review-policy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        產出物審查政策 (Artifact Review Policy)
+        Artifact Review Policy (產出物審查政策)
       
     </span>
   </a>
@@ -808,7 +808,7 @@
   <a href="#terminal-command-auto-execution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        終端機命令自動執行 (Terminal Command Auto Execution)
+        Terminal Command Auto Execution (終端機命令自動執行)
       
     </span>
   </a>
@@ -819,7 +819,7 @@
   <a href="#agent-non-workspace-file-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代理非工作空間檔案存取 (Agent Non-Workspace File Access)
+        Agent Non-Workspace File Access (代理非工作空間檔案存取)
       
     </span>
   </a>
@@ -835,7 +835,7 @@
   <a href="#models-context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        模型與內容 (Models &amp; Context)
+        Models &amp; Context (模型與內容)
       
     </span>
   </a>
@@ -1821,19 +1821,19 @@
   <a href="#overall-settings" class="md-nav__link">
     <span class="md-ellipsis">
       
-        通用設定 (Overall Settings)
+        Overall Settings (通用設定)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="通用設定 (Overall Settings)">
+    <nav class="md-nav" aria-label="Overall Settings (通用設定)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#artifact-review-policy" class="md-nav__link">
     <span class="md-ellipsis">
       
-        產出物審查政策 (Artifact Review Policy)
+        Artifact Review Policy (產出物審查政策)
       
     </span>
   </a>
@@ -1844,7 +1844,7 @@
   <a href="#terminal-command-auto-execution" class="md-nav__link">
     <span class="md-ellipsis">
       
-        終端機命令自動執行 (Terminal Command Auto Execution)
+        Terminal Command Auto Execution (終端機命令自動執行)
       
     </span>
   </a>
@@ -1855,7 +1855,7 @@
   <a href="#agent-non-workspace-file-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代理非工作空間檔案存取 (Agent Non-Workspace File Access)
+        Agent Non-Workspace File Access (代理非工作空間檔案存取)
       
     </span>
   </a>
@@ -1871,7 +1871,7 @@
   <a href="#models-context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        模型與內容 (Models &amp; Context)
+        Models &amp; Context (模型與內容)
       
     </span>
   </a>
@@ -1898,28 +1898,34 @@
   
 
 
-<h1 id="settings">設定 (Settings)</h1>
-<p>您可以透過代理的組態選項來調整其行為，包括產出物審查政策、終端機命令執行以及檔案存取權限。</p>
-<h2 id="overall-settings">通用設定 (Overall Settings)</h2>
-<h3 id="artifact-review-policy">產出物審查政策 (Artifact Review Policy)</h3>
+<h1 id="settings">Settings (設定)</h1>
+<p>您可以透過 Agent 的組態選項來調整其行為，包括 Artifacts 審查政策、Terminal 命令執行以及檔案存取權限。</p>
+<h2 id="overall-settings">Overall Settings (通用設定)</h2>
+<h3 id="artifact-review-policy">Artifact Review Policy (產出物審查政策)</h3>
 <ul>
-<li><strong>總是繼續 (Always Proceed)</strong>：代理在產生產出物後不會詢問審查，直接繼續後續任務。</li>
-<li><strong>請求審查 (Request Review)</strong>：代理在執行實作計畫或關鍵產出物前，會先請求您的審查。</li>
+<li>
+<p><strong>Always Proceed (總是繼續)</strong>：Agent 在產生 Artifacts 後不會詢問審查，直接繼續後續任務。
+    <img alt="Always Proceed" src="../../assets/images/settings-review-policy-proceed.png" /></p>
+</li>
+<li>
+<p><strong>Request Review (請求審查)</strong>：Agent 在執行 Implementation Plan 或關鍵 Artifacts 前，會先請求您的審查。
+    <img alt="Request Review" src="../../assets/images/settings-review-policy-manual.png" /></p>
+</li>
 </ul>
-<h3 id="terminal-command-auto-execution">終端機命令自動執行 (Terminal Command Auto Execution)</h3>
+<h3 id="terminal-command-auto-execution">Terminal Command Auto Execution (終端機命令自動執行)</h3>
 <ul>
-<li><strong>請求審查 (Request Review)</strong>：所有終端機命令在執行前都必須經過您的核准（除了已加入「允許清單」的命令）。</li>
-<li><strong>總是繼續 (Always Proceed)</strong>：代理會自動執行命令，除非該命令在「拒絕清單」中。</li>
+<li><strong>Request Review</strong>: 所有 Terminal 命令在執行前都必須經過您的核准（除了已加入「Allowlist」的命令）。</li>
+<li><strong>Always Proceed</strong>: Agent 會自動執行命令，除非該命令在「Denylist」中。</li>
 </ul>
-<h3 id="agent-non-workspace-file-access">代理非工作空間檔案存取 (Agent Non-Workspace File Access)</h3>
-<p>預設情況下，代理僅能存取工作空間目錄以及 <code>~/.antigravity/</code>。啟用此設定後，代理可以檢視並編輯這些邊界之外的檔案。</p>
-<h2 id="models-context">模型與內容 (Models &amp; Context)</h2>
+<h3 id="agent-non-workspace-file-access">Agent Non-Workspace File Access (代理非工作空間檔案存取)</h3>
+<p>預設情況下，Agent 僅能存取 Workspace 目錄以及 <code>~/.antigravity/</code>。啟用此設定後，Agent 可以檢視並編輯這些邊界之外的檔案。</p>
+<h2 id="models-context">Models &amp; Context (模型與內容)</h2>
 <ul>
-<li><strong>推理模型 (Reasoning Models)</strong>：您可以根據需要切換不同的模型（如 Gemini 3 Pro, Claude Sonnet 4.5, GPT-OSS）。</li>
-<li><strong>黏性選擇 (Sticky Selection)</strong>：在單一對話輪次中，您的模型選擇會保持生效直到任務完成或取消。</li>
+<li><strong>Reasoning Models</strong>: 您可以根據需要切換不同的模型（如 Gemini 3 Pro, Claude Sonnet 4.5, GPT-OSS）。</li>
+<li><strong>Sticky Selection (黏性選擇)</strong>: 在單一對話輪次中，您的 Model 選擇會保持生效直到任務完成或取消。</li>
 </ul>
 <hr />
-<p>導覽：<a href="../modes/">&lt;- 模式</a> | <a href="../rules/">規則 -&gt;</a></p>
+<p>導覽：<a href="../modes/">&lt;- Modes</a> | <a href="../rules/">Rules -&gt;</a></p>
 <hr />
 <blockquote>
 <p><strong>原文參考</strong>：<a href="https://antigravity.google/docs/agent-modes-settings">antigravity.google/docs/agent-modes-settings</a></p>

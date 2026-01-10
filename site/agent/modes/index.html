@@ -754,22 +754,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#conversation-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        對話模式
+        Conversation Modes (對話模式)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="對話模式">
+    <nav class="md-nav" aria-label="Conversation Modes (對話模式)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#planning-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        規劃模式 (Planning Mode)
+        Planning Mode
       
     </span>
   </a>
@@ -780,7 +780,7 @@
   <a href="#fast-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        快速模式 (Fast Mode)
+        Fast Mode
       
     </span>
   </a>
@@ -793,10 +793,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#agent-lifecycle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代理生命週期 (規劃、執行、驗證)
+        Agent Lifecycle (代理生命週期)
       
     </span>
   </a>
@@ -1807,22 +1807,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#conversation-modes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        對話模式
+        Conversation Modes (對話模式)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="對話模式">
+    <nav class="md-nav" aria-label="Conversation Modes (對話模式)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#planning-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        規劃模式 (Planning Mode)
+        Planning Mode
       
     </span>
   </a>
@@ -1833,7 +1833,7 @@
   <a href="#fast-mode" class="md-nav__link">
     <span class="md-ellipsis">
       
-        快速模式 (Fast Mode)
+        Fast Mode
       
     </span>
   </a>
@@ -1846,10 +1846,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#agent-lifecycle" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代理生命週期 (規劃、執行、驗證)
+        Agent Lifecycle (代理生命週期)
       
     </span>
   </a>
@@ -1876,22 +1876,22 @@
   
 
 
-<h1 id="modes">模式 (Modes)</h1>
-<p>當啟動新的智能代理 (Agent) 對話時，使用者可以選擇不同的模式。此外，Antigravity 的核心工作流程也遵循「規劃、執行、驗證」的生命週期。</p>
-<h2 id="_1">對話模式</h2>
-<h3 id="planning-mode">規劃模式 (Planning Mode)</h3>
-<p>代理在執行任務前會進行規劃。適用於深度研究、複雜任務或協作工作。在此模式下，代理會將工作組織成<strong>任務組 (Task groups)</strong>，產出<strong>產出物 (Artifacts)</strong>，並採取其他步驟進行徹查、思考與規劃，以確保最佳品質。</p>
-<h3 id="fast-mode">快速模式 (Fast Mode)</h3>
-<p>代理將直接執行任務。適用於可以快速完成的簡單任務，例如重新命名變數、啟動幾個 Bash 命令或其他較小的分區任務。當速度是重要因素且任務足夠簡單、不必擔心品質下降時，此模式非常有用。</p>
-<h2 id="_2">代理生命週期 (規劃、執行、驗證)</h2>
-<p>Antigravity 透過強調以下階段，使代理能夠跨多個介面自主運行：</p>
+<h1 id="modes">Modes (模式)</h1>
+<p>當啟動新的 Agent 對話時，使用者可以選擇不同的 Mode。此外，Antigravity 的核心 Workflow 也遵循「Planning, Execution, Verification」的生命週期。</p>
+<h2 id="conversation-modes">Conversation Modes (對話模式)</h2>
+<h3 id="planning-mode">Planning Mode</h3>
+<p>Agent 在執行任務前會進行規劃。適用於深度研究、複雜任務或協作工作。在此模式下，Agent 會將工作組織成 <strong>Task groups</strong>，產出 <strong>Artifacts</strong>，並採取其他步驟進行徹查、思考與規劃，以確保最佳品質。</p>
+<h3 id="fast-mode">Fast Mode</h3>
+<p>Agent 將直接執行任務。適用於可以快速完成的簡單任務，例如重新命名變數、啟動幾個 Bash 命令或其他較小的分區任務。當速度是重要因素且任務足夠簡單、不必擔心品質下降時，此模式非常有用。</p>
+<h2 id="agent-lifecycle">Agent Lifecycle (代理生命週期)</h2>
+<p>Antigravity 透過強調以下階段，使 Agent 能夠跨多個介面自主運行：</p>
 <ul>
-<li><strong>規劃 (Planning)</strong>：建立結構化計畫與任務組。</li>
-<li><strong>執行 (Execution)</strong>：同步控制編輯器、終端機與瀏覽器介面。</li>
-<li><strong>驗證 (Verification)</strong>：檢查代理工作的結果，以確保更高層級的溝通與品質（通常使用瀏覽器子代理或審閱產出物）。</li>
+<li><strong>Planning (規劃)</strong>：建立結構化計畫與 Task groups。</li>
+<li><strong>Execution (執行)</strong>：同步控制 Editor、Terminal 與 Browser 介面。</li>
+<li><strong>Verification (驗證)</strong>：檢查 Agent 工作的結果，以確保更高層級的溝通與品質（通常使用 Browser Subagent 或審閱 Artifacts）。</li>
 </ul>
 <hr />
-<p>導覽：<a href="../models/">&lt;- 模型</a> | <a href="../settings/">設定 -&gt;</a></p>
+<p>導覽：<a href="../models/">&lt;- Models</a> | <a href="../settings/">Settings -&gt;</a></p>
 <hr />
 <blockquote>
 <p><strong>原文參考</strong>：<a href="https://antigravity.google/docs/agent-modes-settings">antigravity.google/docs/agent-modes-settings</a></p>

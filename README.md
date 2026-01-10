@@ -43,4 +43,4 @@ Google Antigravity 是 Google 於 2025 年 11 月發布的新一代 AI 驅動整
 
 ---
 
-> **免責聲明**：本翻譯為社群貢獻，非 Google 官方翻譯。如有疑義，請以[官方英文文檔](https://antigravity.google/docs/)為準。
+> **免責聲明**：本翻譯為社群貢獻，非 Google 官方翻譯。如有疑義，請以[官方英文文檔](https://antigravity.google/docs)為準。

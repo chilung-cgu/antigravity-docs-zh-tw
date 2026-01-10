@@ -1,15 +1,17 @@
-# 審查變更 (Review Changes)
+# Review Changes (審查變更)
 
-Antigravity 提供專門的介面，讓您在提交 (Commit) 前審核 AI 生成的程式碼。
+Antigravity 提供專門的介面，讓您在 Commit 前審核 AI 生成的程式碼。
 
-## 審查流程
+## Review Process (審查流程)
 
-1.  **提交核准**：當代理編寫完程式碼，代理面板的工具列會出現「審查變更 (Review Changes)」區段。
-2.  **差異檢視 (Diff View)**：點擊後會在編輯器內開啟差異比對視圖。
-3.  **協作與反饋**：您可以對特定的程式碼差異發表評論，提供反饋或要求代理進一步調整，操作方式與產出物 (Artifacts) 類似。
+1.  **Commit Approval**: 當 Agent 編寫完程式碼，Agent Side Panel 的工具列會出現「Review Changes」區段。
+2.  **Diff View (差異檢視)**：點擊後會在 Editor 內開啟差異比對視圖。
+3.  **Collaboration & Feedback**: 您可以對特定的程式碼差異發表評論，提供反饋或要求 Agent 進一步調整，操作方式與 Artifacts 類似。
+
+![Review Diff View](../assets/images/review-diff-view.png)
 
 ---
-導覽：[<- 代理側邊欄](agent-side-panel.md) | [原始碼控制 ->](source-control.md)
+導覽：[<- Agent Side Panel](agent-side-panel.md) | [Source Control ->](source-control.md)
 
 ---
 

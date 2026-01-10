@@ -1,24 +1,24 @@
-# 規則 (Rules)
+# Rules (規則)
 
-規則是用於引導代理行為的手動定義 Markdown 檔案（上限 12,000 字元）。您可以為特定專案或全域環境設定特定的行為準則。
+Rules 是用於引導 Agent 行為的手動定義 Markdown 檔案（上限 12,000 字元）。您可以為特定專案或全域環境設定特定的行為準則。
 
-## 如何定義規則
+## Defining Rules (定義規則)
 
-您可以透過**自定義面板 ("...")** -> **規則 (Rules)** -> **+ 全域 (Global)** 或 **+ 工作空間 (Workspace)** 來新增規則。
+您可以透過 **Customization Panel (自定義面板)** (`...`) -> **Rules** -> **+ Global** 或 **+ Workspace** 來新增規則。
 
-### 儲存位置
-*   **全域規則 (Global)**：存儲於 `~/.gemini/GEMINI.md`。
-*   **工作空間規則 (Workspace)**：存儲於專案目錄下的 `.agent/rules/`。
+### Storage Location (儲存位置)
+*   **Global Rules**: 存儲於 `~/.gemini/GEMINI.md`。
+*   **Workspace Rules**: 存儲於專案目錄下的 `.agent/rules/`。
 
-## 啟動方式
+## Activation (啟動方式)
 
-*   **手動 (Manual)**：在輸入框輸入 `@檔名` 來主動套用規則。
-*   **總是開啟 (Always On)**：規則會應用於每一次互動。
-*   **模型決策 (Model Decision)**：代理會根據自然語言描述自動決定何時套用規則。
-*   **Glob 模式**：根據檔案路徑模式（例如 `src/**/*.ts`）自動套用。
+*   **Manual**: 在輸入框輸入 `@filename` 來主動套用 Rules。
+*   **Always On**: Rules 會應用於每一次互動。
+*   **Model Decision**: Agent 會根據自然語言描述自動決定何時套用 Rules。
+*   **Glob Pattern**: 根據檔案路徑模式（例如 `src/**/*.ts`）自動套用。
 
 ---
-導覽：[<- 設定](settings.md) | [工作流程 ->](workflows.md)
+導覽：[<- Settings](settings.md) | [Workflows ->](workflows.md)
 
 ---
 

@@ -726,10 +726,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reasoning-models" class="md-nav__link">
+  <a href="#reasoning-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        推理模型 (Reasoning Models)
+        Reasoning Model (推理模型)
       
     </span>
   </a>
@@ -737,10 +737,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specialized-models" class="md-nav__link">
+  <a href="#additional-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        專用模型 (Specialized Models)
+        Additional Models (其他模型)
       
     </span>
   </a>
@@ -1779,10 +1779,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#reasoning-models" class="md-nav__link">
+  <a href="#reasoning-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        推理模型 (Reasoning Models)
+        Reasoning Model (推理模型)
       
     </span>
   </a>
@@ -1790,10 +1790,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#specialized-models" class="md-nav__link">
+  <a href="#additional-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        專用模型 (Specialized Models)
+        Additional Models (其他模型)
       
     </span>
   </a>
@@ -1820,31 +1820,30 @@
   
 
 
-<h1 id="models">模型 (Models)</h1>
-<p>Antigravity 支援多種高性能的大語言模型，您可以根據任務需求選擇適合的模型。模型選擇在單一對話中具有「黏性」(Sticky)，即會保持您的選擇。</p>
-<h2 id="reasoning-models">推理模型 (Reasoning Models)</h2>
-<p>使用者可以從以下推理模型中選擇：</p>
+<h1 id="models">Models (模型)</h1>
+<h2 id="reasoning-model">Reasoning Model (推理模型)</h2>
+<p>對於核心 Reasoning Model (推理模型)，Antigravity 提供來自 Google Vertex Model Garden 的領先前沿模型：</p>
 <ul>
-<li><strong>Gemini 3 Pro Preview</strong>：最強大的預覽版模型。</li>
-<li><strong>Gemini 2.5 Pro</strong>：穩定且強大的推理模型。</li>
-<li><strong>Claude Sonnet 4.5</strong>：擅長程式碼生成與邏輯推理。</li>
-<li><strong>Claude Sonnet 4.5 (Thinking)</strong>：具備更深層思考能力的專用版。</li>
-<li><strong>GPT-OSS 120B (Medium)</strong>：高性能的開源替代方案。</li>
+<li><strong>Gemini 3 Pro (high)</strong></li>
+<li><strong>Gemini 3 Pro (low)</strong></li>
+<li><strong>Gemini 3 Flash</strong></li>
+<li><strong>Claude Sonnet 4.5</strong></li>
+<li><strong>Claude Sonnet 4.5 (thinking)</strong></li>
+<li><strong>Claude Opus 4.5 (thinking)</strong></li>
+<li><strong>GPT-OSS</strong></li>
 </ul>
-<h2 id="specialized-models">專用模型 (Specialized Models)</h2>
-<p>這些模型用於特定的後端任務，使用者無法自定義：</p>
+<p>使用者可以在對話輸入框下方的 Model Selector (模型選擇器) 下拉選單中選擇要使用的 Reasoning Model：</p>
+<p><img alt="Model Selector" src="../../assets/images/model-selector.png" /></p>
+<p>Reasoning Model 的選擇在單次對話的使用者訊息之間具有「黏性」(sticky)，因此如果您在 Agent 運行時更改 Reasoning Model，它將繼續使用先前選擇的 Reasoning Model，直到完成該輪使用者轉向的步驟（或直到使用者取消當前執行）。</p>
+<p>在我們的 Plans (方案) 頁面中了解更多關於 Reasoning Model 速率限制的資訊。</p>
+<h2 id="additional-models">Additional Models (其他模型)</h2>
+<p>Antigravity 在技術棧的各個部分使用了一些不可自定義的其他模型：</p>
 <ul>
-<li><strong>Nano Banana Pro</strong>：生成式繪圖工具，用於製作 UI 模型、填寫網頁內容，以及生成系統或架構圖。</li>
-<li><strong>Gemini 2.5 Pro UI Checkpoint</strong>：輔助瀏覽器子代理 (Browser subagent) 的互動與 UI 處理。</li>
-<li><strong>Gemini 2.5 Flash</strong>：用於內部檢查點 (Internal checkpointing) 與上下文摘要。</li>
-<li><strong>Gemini 2.5 Flash Lite</strong>：驅動程式碼庫內的語義搜尋。</li>
+<li><strong>Nano Banana Pro</strong>: 當 Agent 想要生成 UI Mockup、需要圖片來填充網頁或應用程式、生成系統或架構圖以及其他生成圖像任務時，由 Generative Image Tool (生成圖像工具) 使用過。</li>
+<li><strong>Gemini 2.5 Pro UI Checkpoint</strong>: 由 Browser Subagent (瀏覽器子代理) 使用，用於操作瀏覽器，例如點擊、滾動或填寫輸入。</li>
+<li><strong>Gemini 2.5 Flash</strong>: 在背景中使用，用於 Checkpointing (檢查點製作) 和 Context Summarization (上下文摘要)。</li>
+<li><strong>Gemini 2.5 Flash Lite</strong>: 由 Codebase Semantic Search Tool (程式碼庫語義搜尋工具) 使用。</li>
 </ul>
-<hr />
-<p>導覽：<a href="../">&lt;- 智能代理概述</a> | <a href="../modes/">模式 -&gt;</a></p>
-<hr />
-<blockquote>
-<p><strong>原文參考</strong>：<a href="https://antigravity.google/docs/models">antigravity.google/docs/models</a></p>
-</blockquote>
 
 
 
