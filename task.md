@@ -2,8 +2,8 @@
 
 ## 📊 總覽
 - **總文檔數**：約 25 頁
-- **已完成**：0 頁
-- **進度**：0%
+- **已完成**：6 頁
+- **進度**：24%
 
 ---
 
@@ -32,9 +32,9 @@
 - [x] [智能代理概述](docs/agent/index.md)
 - [x] [模型 Models](docs/agent/models.md)
 - [x] [模式 Modes](docs/agent/modes.md)
-- [ ] [設定 Settings](docs/agent/settings.md) <!-- 需要原文 -->
-- [ ] [規則 Rules](docs/agent/rules.md) <!-- 需要原文 -->
-- [ ] [工作流程 Workflows](docs/agent/workflows.md) <!-- 需要原文 -->
+- [x] [設定 Settings](docs/agent/settings.md)
+- [x] [規則 Rules](docs/agent/rules.md)
+- [x] [工作流程 Workflows](docs/agent/workflows.md)
 
 ---
 
