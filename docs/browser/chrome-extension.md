@@ -13,6 +13,7 @@ Antigravity Chrome Extension 是 Agent 存取網頁的必要元件。
 
 ### Manual Installation (手動安裝步驟)
 如果需要手動安裝：
+
 1.  點擊 Antigravity 中的 **Chrome Icon**（這會以隔離的 Profile 啟動 Browser）。
 2.  在 Editor 右上角或 Agent Manager 左下角找到圖示。
 3.  導航至 Extension 網址，點擊「Add to Chrome」。
