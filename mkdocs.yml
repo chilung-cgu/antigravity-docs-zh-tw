@@ -1,42 +1,116 @@
 site_name: Antigravity 繁體中文文檔
 site_url: https://chilung-cgu.github.io/antigravity-docs-zh-tw/
+site_description: Antigravity AI 程式設計助手繁體中文文檔
 repo_url: https://github.com/chilung-cgu/antigravity-docs-zh-tw
 repo_name: chilung-cgu/antigravity-docs-zh-tw
 
 theme:
   name: material
-  language: zh-TW
-  palette: 
+  language: zh
+  palette:
     - scheme: default
       primary: indigo
-      accent: indigo
+      accent: amber
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: 切換至深色模式
     - scheme: slate
       primary: indigo
-      accent: indigo
+      accent: amber
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切換至淺色模式
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
   features:
+    # 導航體驗
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - navigation.tracking
+    # 目錄
+    - toc.follow
+    # 搜尋
     - search.suggest
     - search.highlight
+    - search.share
+    # 內容互動
     - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+    # 介面
+    - header.autohide
+    - announce.dismiss
+
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      zoomable: true
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Taipei
+      enable_creation_date: true
+  - awesome-pages
 
 markdown_extensions:
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: 目錄
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.emoji
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.snippets
-  - tables
-  - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chilung-cgu/antigravity-docs-zh-tw
 
 nav:
   - 首頁: index.md
